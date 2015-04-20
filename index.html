@@ -6551,7 +6551,8 @@ body, html { height: 99%; }
         Open Source JavaScript Client-Side Bitcoin Paper Wallet Generator<br>
         Print on US Letter size paper without header and footer. It works best with the Safari Browser.<br>
         <br>
-        This is a BETA test. Send me a message via github, if you have idas how to make it more secure.<br>
+        This is a BETA test. Use 3 seals instead of just 1. <br>
+        Send me a message via github, if you have ideas how to make it more secure.<br>
 		</div>
 		<div id="seedpoolarea"><textarea rows="16" cols="62" id="seedpool"></textarea></div>
 		<div id="testnet"></div>	
@@ -7276,8 +7277,8 @@ ninja.seeder = {
 	// number of mouse movements to wait for
 	seedLimit: (function () {
 		var num = Crypto.util.randomBytes(12)[11];
-		//return 200 + Math.floor(num);
-        return 4;
+		return 200 + Math.floor(num);
+        //return 4;
 	})(),
 
 	seedCount: 0, // counter
